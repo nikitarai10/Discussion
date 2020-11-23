@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion</title>
+
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="./images/favicon.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Font-ROBOTO -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper-JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS file -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="container d-none d-md-block px-3">
+        <div class="top_links">
+                <div class="row align-items-center m-0 p-0">
+                    <div class="col-md-7">
+                    <div class="top-link">
+                    <span class="copyright">Copyright Milako Themes 2016</span>
+                    <div class="upper_links ml-auto d-none d-lg-block">
+                    <span class="mr-1"> <a href="#">World </a> / </span>
+                    <span class="mr-1"><a href="#">Latest News </a> / </span>
+                    <span class="mr-1"> <a href="#">Features </a> /</span>
+                    <span class="mr-1"><a href="#">Buy now!</a></span>
+                </div>
+                    </div>
+                </div>
+                <div class="d-none d-md-block col-md-5 pl-0">
+                    <div class="top_link_right justify-content-end">
+                       <div class="dropdown top_link_dropdown">
+                        <a class="dropdown-toggle dropLink" data-toggle="dropdown">
+                        English
+                        </a>
+                        <div class="dropdown-menu text-center top_link_hover_content">
+                          <a class="dropdown-item" href="#">French</a>
+                          <a class="dropdown-item border-top" href="#">German</a>
+                          <a class="dropdown-item border-top" href="#">Italian</a>
+                        </div>
+                      </div>
+                    <div class="top_link_inner ml-3">
+                        <ul class="row social list-unstyled">
+                            <li><a href="#" target="_blank">
+                            <i class="fab fa-facebook-f"></i>                
+                            </a></li>
+                        
+                            <li><a href="#" target="_blank">
+                            <i class="fab fa-twitter" ></i>
+                            </a></li>
+                        
+                            <li><a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            </a></li>
+                        
+                            <li><a href="#" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                                </a></li>
+                        
+                            <li><a href="#" target="_blank">
+                                <i class="fab fa-pinterest" ></i>
+                                </a></li>
+                        
+                            <li><a href="#" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                                </a></li>
+                        </ul>
+                    </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- HEADER IMAGE -->
+                <div class="top_head_image bg-white">
+                    <div class="container">
+                  <div class="row align-items-center">
+                    <div class="col-6 col-sm-5">
+                        <img class="w-100" src="./images/logo.png">
+                     </div>
+                     <div class="d-none d-lg-block offset-1 col-6 col-md-6">
+                         <img src="./images/header-banner.jpg" class="w-100">
+                        </div>
+                        <!---------- Small Device Navbar ----------->
+                         <div class="small_header col-6 d-lg-none d-block text-right offset-sm-1" id="menuicon">
+                         <img src="./images/menu.png" width="22px" height="22px" id="menuIcon"  onclick="shownav()" class="ml-auto">
+                         <img src="./images/close.png" width="18px" height="18px" id="closeIcon" class="ml-auto">
+                         </div>
+                        </div>
+
+                         <ul class="list-unstyled small_header_ul d-lg-none d-block " id="small_header_ul">
+                             <li class="row align-items-center">
+                                 <a href="#" class="col-6">Home</a>
+                                <div class="small_header_click col-6 ">
+                                <img src="./images/side.png" width="15px" height="15px" class="side_arrow justify-content-end closeArrow" onclick="displaySmallUL()">
+                                </div>
+                                <div class="small_header_click_ul groupList">
+                                <ul class="list-unstyled small_device_inner_links">
+                                    <li><a href="#">Main Home</a></li>
+                                    <li><a href="#">Newspaper Home</a></li>
+                                    <li><a href="#">
+                                        Wide Carousel
+                                    </a></li>
+                                    <li><a href="#">Slider</a></li>
+                                </ul>
+                            </div>
+                            </li>
+
+                            <li class="row align-items-center">
+                            <a href="#" class="col-6">Lifestyle</a>
+                            <div class="lifestyle_click col-6 ">
+                                <img src="./images/side.png" width="15px" height="15px" class="lifestyle_arrow justify-content-end closeArrow" onclick="displayLifestyle()">
+                                </div>
+                                <div class="lifestyle_click_ul groupList">
+                                <ul class="list-unstyled lifestyle_inner_links">
+                                    <li><a href="#">Fun</a></li>
+                                    <li><a href="#">Fact</a></li>
+                                    <li><a href="#">
+                                        Sport
+                                    </a></li>
+                                    <li><a href="#">Health</a></li>
+                                </ul>
+                            </div>
+                            </li>
+
+                            <li class="row align-items-center one">
+                                <a href="#" class="col-6">World</a>
+                                <div class="world_click col-6 ">
+                                    <img src="./images/side.png" width="15px" height="15px" class="world_arrow justify-content-end closeArrow" onclick="displayWorld()">
+                                    </div>
+                                    <div class="world_click_ul groupList">
+                                    <ul class="list-unstyled world_inner_links">
+                                        <li><a href="#">World</a></li>
+                                        <li><a href="#">Business</a></li>
+                                        <li><a href="#">
+                                            Travel
+                                        </a></li>
+                                        <li><a href="#">Fashion</a></li>
+                                    </ul>
+                                </div>
+                                </li>
+                          
+                                <li class="row align-items-center">
+                                    <a href="#" class="col-6">Features</a>
+                                    <div class="feature_click col-6 ">
+                                        <img src="./images/side.png" width="15px" height="15px" class="feature_arrow justify-content-end closeArrow" onclick="displayFeatureLinks()">
+                                        </div>
+                                        <div class="feature_click_ul groupList">
+                                            <div class="row">
+                                    <div class="page col-6 col-sm-4">
+                                        <h3>Page</h3>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Sport</a></li>
+                                            <li><a href="#">Health</a></li>
+                                            <li><a href="#">Food</a></li>
+                                            <li><a href="#">Fact</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="template col-4 d-none d-sm-block">
+                                        <h3>Template</h3>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Template 1</a></li>
+                                            <li><a href="#">Template 2</a></li>
+                                            <li><a href="#">Template 3</a></li>
+                                            <li><a href="#">Template 4</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="shop col-6 col-sm-4">
+                                        <h3>Shop</h3>
+                                        <ul class="list-unstyled">
+                                            <li><a href="#">Single Product</a></li>
+                                            <li><a href="#">Shoes</a></li>
+                                            <li><a href="#">Casual</a></li>
+                                            <li><a href="#">Formal</a></li>
+                                        </ul>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </li> 
+
+                         </ul>
+            </div>
+        </div>
+
+        <!--BIG SCREEN NAVBAR -->
+
+        <div class="navbar_feature d-none d-lg-block">
+            <div class="container">
+                <div class="row">
+                    <div class="d-none d-md-block col-md-12 col-xl-10">
+                        <div class="navbar_list">
+                            <ul class="navbar navbar-expand-md list-unstyled">
+
+                            <li class="navbar-item border-right border-left px-3 " id="menubar" onclick="showbar()">
+                                <i class="fa fa-bars fa-lg"></i>
+                                </li>
+
+                                <li class="navbar-item border-right dropdown home_dropdown ">
+                                <a href="" class="navbar-link dropdown-toggle text-center" data-toggle="dropdown">Home </a>
+                                <div class="dropdown-menu" id="child_UL">
+                                    <a href="#" class="dropdown-item">Main Home</a>
+                                    <a href="#" class="dropdown-item border-top">Newspaper Home</a>
+                                    <a href="#" class="dropdown-item border-top">Wide Carousel</a>
+                                    <a href="#" class="dropdown-item border-top">Blog Home</a>
+                                    <a href="#" class="dropdown-item border-top">Slider</a>
+                                    <a href="#" class="dropdown-item border-top">Shop Home</a>
+                                </div>
+                                 </li>
+
+                                <li class="navbar-item border-right dropdown lifestyle ">
+                                <a href="" class="navbar-link dropdown-toggle" data-toggle="dropdown">Lifestyle</a>
+                                <div class="dropdown-menu lifestyle_dropdown">
+                                    <div class="row">
+                                    <div class="col-3 lifestyle_dropdown_left">
+                                        <a href="#">Fun</a>
+                                        <a href="#" class="border-top dropdown-item">Fashion</a>
+                                        <a href="#" class="border-top dropdown-item">Fact</a>
+                                        <a href="#" class="border-top dropdown-item">Sport</a>
+                                        <a href="#" class="border-top dropdown-item">Technology</a>
+                                    </div>
+                                    <div class="col-9 row lifestyle_dropdown_right">
+                                        <div class="col-4">
+                                            <img src="./images/team1.png" class="w-100">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./images/team2.png" class="w-100">
+                                        </div>
+                                        <div class="col-4">
+                                            <img src="./images/team3.png" class="w-100">
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </li> 
+
+                                <li class="navbar-item border-right videos dropdown ">
+                                <a href="" class="navbar-link dropdown-toggle" data-toggle="dropdown">Videos </a>
+                                  <div class="dropdown-menu videos_dropdown">
+                                      <div class="row pl-1">
+                                      <div class="col-3">
+                                          <div class="background"></div>
+                                        <iframe  width="190" height="200" src="https://www.youtube.com/embed/Dif_scts-fo?start=26" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="date">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <p>Nov 10, 2020</p>
+                                        </div>
+        
+                                      </div>
+                                      <div class="col-3 videos_kushma">
+                                        <div class="background"></div>
+                                        <iframe width="190" height="200" src="https://www.youtube.com/embed/onPbbMQ4T6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                        </iframe>
+                                        <div class="date">
+                                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                                        <p>Nov 5, 2020</p>
+                                    </div>
+                                      </div>
+                                      <div class="col-3 videos_damauli">
+                                        <div class="background"></div>
+                                        <iframe  width="190" height="200" src="https://www.youtube.com/embed/KvesV0Il3ks" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="date">
+                                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                                            <p>Nov 8, 2020</p>
+                                        </div>
+                
+                                      </div>
+                                      <div class="col-3 videos_antu">
+                                        <div class="background"></div>
+                                        <iframe width="190" height="200" src="https://www.youtube.com/embed/c02iSq_1clA?start=26" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <div class="date">
+                                            <i class="fa fa-calendar"></i>
+                                            <p>Nov 15 , 2020</p>
+                                        </div>         
+                                      </div>
+                                    </div>
+                                </div>
+                                </li> 
+
+                                <li class="navbar-item dropdown border-right world ">
+                                <a href="" class="navbar-link dropdown-toggle" data-toggle="dropdown">World</a>
+                            <div class="dropdown-menu world_dropdown">
+                                <div class="row">
+                                    <div class="col-3">
+                                        <a href="" class="dropdown-item hover_world">World</a>
+                                        <a href="" class="dropdown-item border-top hover_business">Business</a>
+                                        <a href="" class="dropdown-item border-top">Travel</a>
+                                        <a href="" class="dropdown-item border-top">Health</a>
+                                        <a href="" class="dropdown-item border-top">Fashion</a>
+                                    </div>
+
+                                    <div class="col-8 hover_first world_right_image ml-4">
+                                        <div class="row">
+                                            <div class="col-4 my-3 world_right_image_inner p-0 pl-2 pr-3">
+                                            <div class="row">
+                                                <div class="col-7">
+                                                <img src="./images/user-1.png" class="w-100">
+                                            </div>
+                                            <div class="col-5 p-0">
+                                                <h4>Lorem ipsum adipisicing elit.</h4>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            <div class="col-4 my-3 world_right_image_inner p-0 pl-2 pr-3">
+                                                <div class="row">
+                                                    <div class="col-7">
+                                                    <img src="./images/user-2.png" class="w-100">
+                                                </div>
+                                                <div class="col-5 p-0">
+                                                    <h4>Lorem ipsum adipisicing elit.</h4>
+                                                </div>
+                                                </div>
+                                                </div>
+                                            <div class="col-4 my-3 world_right_image_inner p-0 pl-2 pr-3">
+                                            <div class="row">
+                                            <div class="col-7">
+                                            <img src="./images/user-3.png" class="w-100">
+                                            </div>
+                                            <div class="col-5 align-items-center p-0">
+                                            <h4>Lorem ipsum consectetur elit.</h4>
+                                            </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mt-1 world_right_image_inner p-0 pl-2 pr-3">
+                                                <div class="row">
+                                                    <div class="col-7">
+                                                    <img src="./images/team1.png" class="w-100">
+                                                </div>
+                                                <div class="col-5 p-0">
+                                                    <h4>Lorem ipsum adipisicing elit.</h4>
+                                                </div>
+                                                </div>
+                                                </div>
+                                                <div class="col-4 mt-1 world_right_image_inner p-0 pl-2 pr-3">
+                                                    <div class="row">
+                                                        <div class="col-7">
+                                                        <img src="./images/team2.png" class="w-100">
+                                                    </div>
+                                                    <div class="col-5 p-0">
+                                                        <h4>Lorem ipsum adipisicing elit.</h4>
+                                                    </div>
+                                                    </div>
+                                                    </div>
+                                                <div class="col-4 mt-1 world_right_image_inner p-0 pl-2 pr-3">
+                                                <div class="row">
+                                                <div class="col-7">
+                                                <img src="./images/team3.png" class="w-100">
+                                                </div>
+                                                <div class="col-5 align-items-center p-0">
+                                                <h4>Lorem ipsum consectetur elit.</h4>
+                                                </div>
+                                                    </div>
+                                                </div>
+                                               
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+                        </li>
+                                <li class="navbar-item border-right dropdown layout ">
+                                <a href="" class="navbar-link dropdown-toggle" data-toggle="dropdown">Layouts</a>
+                            <div class="dropdown-menu layout_dropdown">
+                                <a href="#" class="dropdown-item">Layout 1</a>
+                                <a href="#" class="dropdown-item border-top"> Layout 2</a>
+                                <a href="#" class="dropdown-item border-top"> Layout 3</a>
+                                <a href="#" class="dropdown-item border-top">Layout 4</a>
+                                <a href="#" class="dropdown-item border-top">Layout 5</a>
+                                <a href="#" class="dropdown-item border-top">Layout 6</a>
+                            </div>
+                            </li>
+
+                                <li class="navbar-item border-right postType ">
+                                <a href="" class="navbar-link dropdown-toggle" data-toggle="dropdown">Post Types</a>
+                                <div class="dropdown-menu postType_dropdown">
+                                    <a href="#" class="dropdown-item">Standard</a>
+                                    <a href="#" class="dropdown-item border-top">Gallery</a>
+                                    <a href="#" class="dropdown-item border-top">Link</a>
+                                    <a href="#" class="dropdown-item border-top">Quote </a>
+                                    <a href="#" class="dropdown-item border-top">Audio</a>
+                                    <a href="#" class="dropdown-item border-top">Video</a>
+                                    <a href="#" class="dropdown-item border-top">Sports</a>
+                                </div>
+                            </li>
+
+                                <li class="navbar-item border-right dropdown feature ">
+                                <a href="" class="navbar-link dropdown-toggle" data-toggle="dropdown">Features</a>
+                            <div class="dropdown-menu feature_dropdown">
+                                <div class="row px-3">
+                                    <div class="col-4 mt-3">
+                                        <h5 class="ml-3">Pages</h5>
+                                    <a href="#" class="dropdown-item">Carousel</a>
+                                    <a href="#" class="dropdown-item border-top">Latest News</a>
+                                    <a href="#" class="dropdown-item border-top">Sport</a>
+                                    <a href="#" class="dropdown-item border-top">Health</a>
+                                    <a href="#" class="dropdown-item border-top">Fasion</a>
+                                    <a href="#" class="dropdown-item border-top">Technology</a>
+                                    <a href="#" class="dropdown-item border-top">Food</a>
+                                    </div>
+                                    <div class="col-4 mt-3">
+                                        <h5>Category Templates</h5>
+                                        <a href="#" class="dropdown-item">Template 1</a>
+                                        <a href="#" class="dropdown-item border-top"> Template 2</a>
+                                        <a href="#" class="dropdown-item border-top">Template 3</a>
+                                        <a href="#" class="dropdown-item border-top">Template 4</a>
+                                        <a href="#" class="dropdown-item border-top">Template 5</a>
+                                        <a href="#" class="dropdown-item border-top">Template 6</a>
+                                        <a href="#" class="dropdown-item border-top">Template 7</a>
+                                    </div>
+                                    <div class="col-4 mt-3">
+                                        <h5 class="ml-3">Shop</h5>
+                                        <a href="#" class="dropdown-item">Sport</a>
+                                        <a href="#" class="dropdown-item border-top">Casual</a>
+                                        <a href="#" class="dropdown-item border-top">Uniform</a>
+                                        <a href="#" class="dropdown-item border-top">Zeans</a>
+                                        <a href="#" class="dropdown-item border-top">Product Single</a>
+                                        <a href="#" class="dropdown-item border-top">Shop with 3 columns</a>
+                                        <a href="#" class="dropdown-item border-top">Shop with 4 columns</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </li>  
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-none d-xl-block col-lg-2">
+                        <div class="search_bag">
+                       <span class="border-right border-left"><i class="fa fa-shopping-bag fa-lg"></i>
+                       </span> 
+                       <span class="border-right"><i class="fa fa-search"></i></span> 
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+             <!------------- SIDE TOGGLE BAR ------------->
+
+        <div class="toggle_bar">
+            <div class="toggle_outer">
+                <div class="toggle_content">
+                <div class="cancel">
+                    <span class="close" onclick="hidebar()">&times;</span>
+                </div>
+                <div class="toggle_inner">
+                    <div class="toggle_div_logo">
+                        <img src="./images/logo-black.png">
+                    </div>
+                </div>
+                <div class="toggle_inner_part2">
+
+                    <div class="home">
+                        <h2>Home</h2>
+                    </div>
+                    <div class="homeUL">
+                        <ul class="list-unstyled">
+                        <li>Main Home</li>
+                        <li>News Home</li>
+                        <li>Carousel</li>
+                        <li>Slider</li>
+                        </ul>
+                    </div>
+              <div class="news">
+                    <div class="home">
+                        <h2>News</h2>
+                    </div>
+                    <div class="newsUL">
+                        <ul class="list-unstyled">
+                        <li>Business</li>
+                        <li>Entertainment</li>
+                        <li>World</li>
+                        <li>Sport</li>
+                        <li>Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+            </div>
+
+
+            <!-- TRENDING -->
+
+            <div class="trend d-none d-lg-block">
+            <div class="container">
+                <p>Trending News > <span> Welcoming the Digital Generation</span></p>
+            </div>
+        </div>
+
+        <!------------- BODY ---------->
+        <div class="body_part_1 mt-3">
+            <div class="container">
+                <div class="row m-0">
+                    <div id="left-col" class="col-lg-8 mb-2 pr-lg-2 p-0">
+                    <div class="body_part_1_large_pic mt-1 hover_div_parent p-0 mx-auto " style="background:url('./images/team1.png'); background-position:center; background-size:cover;">
+                        <div class="background"></div>
+                        <!-- <img src="./images/team3.png" class="w-100 h-100"> -->
+                        <div class="hover_div">
+                            <h4 class="pl-3">Lorem ipsum, dolor sit amet consectetur. Eaque, nulla!</h4>
+                            <span class="mb-3 pl-3"> <i class="fa fa-calendar"></i> 18 Nov 2020</span>
+
+                            <div class="split-banner pt-1">
+                                <div class="content d-none pr-sm-3 pr-2">
+                              <div class="hover_content">
+                                            <p>
+                                            <span>
+                                           <i class="fa fa-share-alt"></i>
+                                           Share  / </span>
+                                           <span>
+                                            <i class="fa fa-comments"></i>
+                                            Comments  /
+                                           </span>
+                                           <span><i class="fa fa-eye"></i>
+                                            Views
+                                            </span>
+                                           </p>
+                                    </div> 
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    </div>      
+                    <div class="col-lg-4">
+                        <div class="row">
+                            <div id="right-col" class="col-md-6 col-lg-12 mt-1 p-0 pr-md-2 pr-lg-0 mb-2 mb-md-0">
+                            <div class="imgHeight hover_div_parent" style="background:url('./images/team2.png'); background-position:center; background-size:cover;">
+                                <div class="background"></div>
+                                <!-- <img src="./images/team1.png" class="w-100 h-100"> -->
+                                <div class="hover_div">
+                                    <h4 class="pl-3">Lorem ipsum, dolor sit amet  elit dolores.</h4>
+                                    <span class="pl-3"> <i class="fa fa-calendar"></i> 18 Nov 2020</span>
+                                <div class="split_banner_right pt-1">
+                                    <div class="right_content d-none pr-sm-3 pr-2">
+                                        <div class="hover_content">
+                                            <p>
+                                            <span>
+                                           <i class="fa fa-share-alt"></i>
+                                           Share  / </span>
+                                           <span>
+                                            <i class="fa fa-comments"></i>
+                                            Comments  /
+                                           </span>
+                                           <span><i class="fa fa-eye"></i>
+                                            Views
+                                            </span>
+                                           </p>
+                                    </div>                                    
+                                </div>
+                                </div>
+                            </div>  
+                            </div>
+                        </div>
+
+                        <div id="right-col" class="col-md-6 col-lg-12 mt-1 p-0">
+                            <div class="imgHeight hover_div_parent p-0" style="background:url('./images/team3.png'); background-position:center; background-size:cover;">
+                                <div class="background"></div>
+                                <!-- <img src="./images/team2.png" class="w-100 h-100"> -->
+                                <div class="hover_div">
+                                    <h4 class="pl-3">Lorem ipsum, dolor sit amet  elit dolores.</h4>
+                                    <span class="pl-3"> <i class="fa fa-calendar"></i> 18 Nov 2020</span>
+                                    <div class="split_banner_right pt-1">
+                                        <div class="right_content d-none  pr-sm-3 pr-2">
+                                            <div class="hover_content">
+                                                <p>
+                                                <span>
+                                               <i class="fa fa-share-alt"></i>
+                                               Share  / </span>
+                                               <span>
+                                                <i class="fa fa-comments"></i>
+                                                Comments  /
+                                               </span>
+                                               <span><i class="fa fa-eye"></i>
+                                                Views
+                                                </span>
+                                               </p>
+                                        </div>                                         
+                                      </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+                <!------BODY PART 2 LIFESTYLE  ------>
+
+                <div class="lifestyle_upper_part my-4">
+                    <div class="container">
+                        <div class="d-flex flex-nowrap m-0 p-0">
+                        <div class="lifestyle_pattern">
+                        </div>
+                        <span class="lifestyle_inner_part_arrow border-right d-none d-md-block">
+                            &#10094;
+                        </span>
+                        <span class="lifestyle_inner_part_arrow d-none d-md-block">
+                            &#10095;
+                        </span>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="lifestyle_lower_part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3 lifestyle_lower_part_content m-0 mb-3 h-100">
+                            <div class="col-12 lifestyle_lower_part_image1 p-0">
+                                <div class="background"></div>
+                                <img src="./images/blog1.jpg" class="w-100">
+                                <div class="lifestyle_lower_part_image3_content p-3">
+                                    <h5 class="pl-1">Lorem ipsum dolor sit consectetur.</h5>
+                                    <span class="mb-3 pl-1"> <i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 lifestyle_lower_part_content m-0 mb-3 h-100">
+                            <div class="col-12 lifestyle_lower_part_image2 p-0">
+                                <div class="background"></div>
+                                <img src="./images/blog2.jpg" class="w-100">
+                                <div class="lifestyle_lower_part_image3_content p-3">
+                                    <h5 class="pl-1">Lorem ipsum dolor sit consectetur.</h5>
+                                    <span class="mb-3 pl-1"> <i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>
+                                </div>                            
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 lifestyle_lower_part_content m-0 mb-3 h-100">
+                            <div class="col-12 lifestyle_lower_part_image3 p-0">
+                                <div class="background"></div>
+                                <img src="./images/blog1.jpg" class="w-100">
+                                <div class="lifestyle_lower_part_image3_content p-3">
+                                    <h5 class="pl-1">Lorem ipsum dolor sit consectetur.</h5>
+                                <span class="mb-3 pl-1"> <i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 lifestyle_lower_part_content m-0 mb-3 h-100">
+                            <div class="col-12 lifestyle_lower_part_image4 p-0 m-0">
+                                <div class="background"></div>
+                                <img src="./images/blog3.jpg" class="w-100">
+                                <div class="lifestyle_lower_part_image3_content p-3">
+                                    <h5 class="pl-1">Lorem ipsum dolor sit consectetur.</h5>
+                                    <span class="mb-3 pl-1"> <i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                 <!------- BODY PART 3 MUSIC -------->
+                <div class="body_part_3_music">
+                <div class="body_music_upper_container mt-3 mb-4">
+                    <div class="container">
+                      <div class="row align-items-center m-0 p-0">
+
+                          <div class="row music_container_left p-0 col-xl-9 m-0">
+                        <div class="col-md-6 col-lg-7 music_container_left_pattern"></div>
+                            <ul class="row align-items-center list-unstyled p-0 m-0 mt-3 mt-md-0 music_container_left_title col-md-6 col-lg-5">
+                            <li><a href="#" class="ml-1">Music</a></li>
+                            <li><a href="#" class="ml-1">Health</a></li>
+                            <li><a href="#">Gaming</a></li>
+                            <li><a href="#">Fashion</a></li>
+                            </ul>
+                      </div>
+                      <div class="music_container_right d-none d-xl-block col-xl-3 p-0 pl-3">
+                          <div class="music_container_right_pattern p-0"></div>
+                      </div>
+                    </div>
+                         </div>
+                     </div>
+<!----------BODY MUSIC LOWER CONTAINER-------->
+                     <div class="body_music_lower_container">
+                         <div class="container">
+ 
+                            <div class="row m-0">
+                            <div class="row body_music_lower_container_left col-xl-9 m-0 p-0 pr-xl-1">
+
+                            <div class="music_lower_inner_container_left_div col-lg-7 p-0">
+                            <div class="music_lower_inner_container_left">
+                            <div class="music_lower_inner_container_left_image" style="background: url('./images/team1.png');background-position: center;
+                            background-size: cover;">
+                        </div>
+                        <div class="music_lower_inner_container_left_content p-4">
+                            <h3>Playing Music On R&B Stations</h3>
+                            <span><i class="fa fa-calendar mr-2"></i>  18 November 2020</span>
+                            <p  class="mt-3 m-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse similique dicta quibusdam voluptatem.</p>
+                        </div>
+                        <div class="row music_lower_container_left_media m-0 p-0 p-1 align-items-center mt-1">
+                            <p class="row m-0 music_lower_container_left_media_content pl-3">
+                                <span>
+                               <i class="fa fa-share-alt"></i>
+                               Share  </span>
+                               <span class="d-none d-sm-block">/ 
+                                <i class="fa fa-comments"></i>
+                                 Comments  /
+                               </span>
+                               <span class="d-none d-sm-block"><i class="fa fa-eye"></i>
+                                Views
+                                </span>
+                               </p>
+                               <span class="readMore m-0 ml-auto pr-2">
+                                Read More  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                                </span>                        
+                            </div>
+                        </div>
+                    </div>
+
+                            <div class="music_lower_inner_container_right col-lg-5 p-0">
+                                <div class="row m-0 p-0 pt-3 pb-3 pb-lg-0 ">
+
+                                    <div class="row music_lower_inner_container_right_content1 col-12 m-0 p-0 pb-3 border-bottom">
+                                        <div class="col-4 col-lg-6 music_inner_container_right_content1_image_div">
+                                            <div class="music_inner_container_right_content1_image"></div>
+                                        </div>
+                                        <div class="col-6 music_inner_container_right_content1_title pt-1 pr-0">
+                                            <h6 class="">How To Organize The Best...</h6>
+                                            <span class="calendar"><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>        
+                                        </div>
+                                    </div>
+
+                                    <div class="row music_lower_inner_container_right_content2 m-0 p-0 col-12 py-3 border-bottom">
+                                        <div class="col-4 col-lg-6 music_inner_container_right_content2_image_div">
+                                            <div class="music_inner_container_right_content2_image"></div>
+                                        </div>
+                                        <div class="col-7 col-sm-6 music_inner_container_right_content2_title pt-1 pr-0">
+                                            <h6>Proof That Beauty Is In The...</h6>
+                                            <span class="calendar"><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>        
+                                        </div>
+                                    </div>
+
+                                    <div class="row col-12 p-0 m-0 py-3 music_lower_inner_container_right_content3 border-bottom">
+                                        <div class="col-4 col-lg-6 music_inner_container_right_content3_image_div">
+                                            <div class="music_inner_container_right_content3_image"></div>
+                                        </div>
+                                        <div class="col-6 music_inner_container_right_content3_title pt-1 pr-0 pt-lg-1">
+                                            <h6>The Music Festivals You....</h6>
+                                            <span class="calendar"><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>        
+                                        </div>
+                                    </div>
+
+                                    <div class="row col-12 p-0 m-0 pt-3 music_lower_inner_container_right_content4">
+                                        <div class="col-4 col-lg-6 music_inner_container_right_content4_image_div">
+                                            <div class="music_inner_container_right_content4_image"></div>
+                                        </div>
+                                        <div class="col-6 music_inner_container_right_content4_title pt-1 pr-0 pt-lg-1">
+                                            <h6>Vote For The Top Track....</h6>
+                                            <span class="calendar"><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>        
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
+                            <div class="row body_music_lower_container_right d-none d-xl-block col-xl-3 m-0 p-0 pl-3">
+                                <div class="row music_lower_container_right_social_icons col-12 p-0 m-0">
+                                        <button type="button" class="btn btn-fb col-4"><i class="fab fa-facebook-f"></i></button>
+                                        <button type="button" class="btn btn-tw col-4"><i class="fab fa-twitter"></i></button>
+                                        <button type="button" class="btn btn-li col-4"><i class="fab fa-linkedin-in"></i></button>                                   
+                                        <button type="button" class="btn btn-pin col-4"><i class="fab fa-pinterest"></i></button>                                   
+                                        <button type="button" class="btn btn-yt col-4"><i class="fab fa-youtube"></i></button>
+                                        <button type="button" class="btn btn-ins col-4"><i class="fab fa-instagram"></i></button>
+                                </div>
+                                <div class="most_views col-12 my-4 p-0">
+                                    <div class="most_views_pattern"></div>
+                                </div>
+                                <div class="music_lower_container_right_image_div col-12 p-0">
+                                    <div class="music_lower_container_right_image">
+                                        <div class="background"></div>
+                                    </div>
+                                    <div class="music_lower_container_right_title py-2">
+                                        <h6 class="pl-3">Welcoming The Digital World.</h6>
+                                        <span class="pl-3"><i class="fa fa-calendar mr-2"></i>18 Nov 2020</span>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+
+                             <!-- RECIPES -->
+                             <div class="recipes p-4 mt-4">
+                                 <div class="container">
+                                     <div class="col-12 p-0 mt-2 mb-4">
+                                         <div class="recipe_pattern"></div>
+                                     </div>
+                                     <div class="row">
+                                         <div class="col-md-6 col-lg-3 mb-3">
+                                             <div class="recipe_image1_div recipe_hover_div">
+                                             <div class="recipe_image1"></div>
+                                             <div class="recipe_hover_content_div">
+                                                <div class="recipe_hover_content p-4 p-lg-3">
+                                                 <h5>Brazil On The Top Of It's Group.</h5>
+                                                 <span><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span> 
+                                                 <p  class="mt-3">Lorem ipsum dolor sit,amet adipicing. Ut corporis quis itaque omnis.</p>
+                                                 </div>       
+                                             </div>
+                                            </div>
+                                         </div>
+                                         <div class="col-md-6 col-lg-3 mb-3">
+                                             <div class="recipe_image2_div recipe_hover_div">
+                                            <div class="recipe_image2"></div>
+                                            <div class="recipe_hover_content_div">
+                                                <div class="recipe_hover_content p-3">
+                                                 <h5>A Race To The Top:
+                                                     Free Cycling.</h5>
+                                                 <span><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span> 
+                                                 <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Ut corporis quis itaque omnis.</p>
+                                                 </div>       
+                                             </div>
+                                        </div>
+                                         </div>
+                                         <div class="col-md-6 col-lg-3 mb-3">
+                                            <div class="recipe_image3_div recipe_hover_div">
+                                                <div class="recipe_image3"></div>
+                                                <div class="recipe_hover_content_div">
+                                                    <div class="recipe_hover_content p-4 p-lg-3">
+                                                     <h5>Cooking Is An Art.But This Is...</h5>
+                                                     <span><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span>
+                                                     <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Ut corporis quis itaque omnis.</p> 
+                                                     </div>       
+                                                 </div>
+                                            </div>                                         
+                                        </div>
+                                         <div class="col-md-6 col-lg-3 mb-3">
+                                            <div class="recipe_image4_div recipe_hover_div">
+                                                <div class="recipe_image4"></div>
+                                                <div class="recipe_hover_content_div">
+                                                    <div class="recipe_hover_content p-3">
+                                                     <h5>We'll Just Leave These Absolute...</h5>
+                                                     <span><i class="fa fa-calendar mr-1"></i> 18 Nov 2020</span> 
+                                                     <p class="mt-3">Lorem ipsum dolor sit, amet consectetur elit. Ut corporis quis itaque omnis.</p>
+                                                     </div>       
+                                                 </div>
+                                            </div>                                         
+                                        </div>
+                                     </div>
+                                 </div>
+                             </div>
+
+                            <!---------- FOOTER  --------->
+                            <footer>
+                                <div class="container">
+                                <div class="row px-3">
+
+                                <div class="contact_media col-md-3 p-0 offset-1 offset-sm-0">
+                                <ul class="row list-unstyled mb-0 col-8 col-md-12">
+                                <li class="col-3"><a href="#" target="_blank">
+                                <i class="fab fa-facebook-f"></i>                
+                                </a></li>
+                                            
+                                <li class="col-3"><a href="#" target="_blank">
+                                <i class="fab fa-twitter" ></i>
+                                </a></li>
+                                            
+                                <li class="col-3"><a href="#" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                </a></li>
+                                            
+                                <li class="col-3"><a href="#" target="_blank">
+                                <i class="fab fa-linkedin-in"></i>
+                                </a></li>
+                                </ul>
+                                </div>
+
+                                    <span class="copyright col-md-5 my-3 my-md-0 d-md-flex justify-content-center align-items-center p-0 offset-1 offset-sm-0">Copyright Mikado Themes 2016 </span>
+                                    
+                                        <div class="footer_links col-md-4 mb-4 mb-md-0 p-0">
+                                            <ul class="row list-unstyled mb-0 align-items-center p-0 justify-content-between col-9 col-md-12 h-100 pr-0 offset-1 offset-sm-0">
+                                                <li><a href="#">World</a></li>
+                                                <li><a href="#">Latest News</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#">Buy Now!</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </footer>
+
+
+	<!-- Font Awesome -->
+    <script src="js/all.min.js"></script>
+    <script src="./js/home.js"></script>
+
+</body>
+</html>
