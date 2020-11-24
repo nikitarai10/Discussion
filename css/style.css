@@ -211,8 +211,12 @@ ul.social li:hover{
 }
 #child_UL a, .lifestyle_dropdown_left a , .world_dropdown a , .layout_dropdown a ,.postType_dropdown a,
 .feature_dropdown a{
-    color: black !important;
+    color: rgb(82, 82, 82) !important;
     transition: 0.4s ease !important;
+}
+#child_UL a, .lifestyle_dropdown_left a, .world_dropdown a, .layout_dropdown a,
+.postType_dropdown a, .feature_dropdown a{
+    transition: all 0.4s ease;
 }
 #child_UL a:hover , .lifestyle_dropdown_left a:hover , .world_dropdown a:hover , .layout_dropdown a:hover ,
 .postType_dropdown a:hover , .feature_dropdown a:hover{
@@ -408,6 +412,7 @@ ul.social li:hover{
     color: rgb(170, 169, 169);
     line-height: 40px;
     border-bottom: 0.6px solid rgb(99, 98, 98);
+    transition: all 0.3s ease;
 }
 .cancel{
     display: flex;
